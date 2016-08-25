@@ -15,6 +15,9 @@
 		CE1A06F91D6EBE4E00E21B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1A06F71D6EBE4E00E21B18 /* LaunchScreen.storyboard */; };
 		CE1A07041D6EBE4E00E21B18 /* viewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A07031D6EBE4E00E21B18 /* viewControllerTests.m */; };
 		CE1A070F1D6EBE4E00E21B18 /* viewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A070E1D6EBE4E00E21B18 /* viewControllerUITests.m */; };
+		CE1A071E1D6EBEF900E21B18 /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A071D1D6EBEF900E21B18 /* YellowViewController.m */; };
+		CE1A07211D6EBFB300E21B18 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A07201D6EBFB300E21B18 /* BlueViewController.m */; };
+		CE1A07241D6EC1D400E21B18 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A07231D6EC1D400E21B18 /* GreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CE1A070A1D6EBE4E00E21B18 /* viewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1A070E1D6EBE4E00E21B18 /* viewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewControllerUITests.m; sourceTree = "<group>"; };
 		CE1A07101D6EBE4E00E21B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1A071C1D6EBEF900E21B18 /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		CE1A071D1D6EBEF900E21B18 /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		CE1A071F1D6EBFB300E21B18 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		CE1A07201D6EBFB300E21B18 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		CE1A07221D6EC1D400E21B18 /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		CE1A07231D6EC1D400E21B18 /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				CE1A06F71D6EBE4E00E21B18 /* LaunchScreen.storyboard */,
 				CE1A06FA1D6EBE4E00E21B18 /* Info.plist */,
 				CE1A06E91D6EBE4E00E21B18 /* Supporting Files */,
+				CE1A071C1D6EBEF900E21B18 /* YellowViewController.h */,
+				CE1A071D1D6EBEF900E21B18 /* YellowViewController.m */,
+				CE1A071F1D6EBFB300E21B18 /* BlueViewController.h */,
+				CE1A07201D6EBFB300E21B18 /* BlueViewController.m */,
+				CE1A07221D6EC1D400E21B18 /* GreenViewController.h */,
+				CE1A07231D6EC1D400E21B18 /* GreenViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -270,6 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1A071E1D6EBEF900E21B18 /* YellowViewController.m in Sources */,
+				CE1A07211D6EBFB300E21B18 /* BlueViewController.m in Sources */,
+				CE1A07241D6EC1D400E21B18 /* GreenViewController.m in Sources */,
 				CE1A06F11D6EBE4E00E21B18 /* ViewController.m in Sources */,
 				CE1A06EE1D6EBE4E00E21B18 /* AppDelegate.m in Sources */,
 				CE1A06EB1D6EBE4E00E21B18 /* main.m in Sources */,
