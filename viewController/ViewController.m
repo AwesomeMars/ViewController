@@ -19,6 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    UITapGestureRecognizer * tapGesture =
+    [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
+    
+    [self.view addGestureRecognizer:tapGesture];
+    
+}
+
+
+-(void)tap:(UITapGestureRecognizer *)param
+{
+    [self.myTextField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
