@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Orange-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -24,17 +24,51 @@
                                     <segue destination="ReA-VB-Lug" kind="show" id="daJ-GU-bQv"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWV-Eh-XJh">
+                                <rect key="frame" x="20" y="97" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qai-f0-0kQ">
+                                <rect key="frame" x="205" y="267" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HOW-9A-A2c"/>
+                    <navigationItem key="navigationItem" title="Orange" id="HOW-9A-A2c"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="myTextField" destination="ZWV-Eh-XJh" id="THt-3D-qFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="663" y="389"/>
         </scene>
-        <!--Yellow View Controller-->
+        <!--Title-->
+        <scene sceneID="yYm-5R-2Me">
+            <objects>
+                <viewController id="8F1-9D-L2a" customClass="GrayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lek-L2-BUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kwz-SZ-Uvm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IQ2-av-hmf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="K0h-PV-JOf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYt-mE-G9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="1024"/>
+        </scene>
+        <!--Yellow-->
         <scene sceneID="bdO-Cm-xBi">
             <objects>
                 <viewController id="ReA-VB-Lug" customClass="YellowViewController" sceneMemberID="viewController">
@@ -53,11 +87,26 @@
                                     <action selector="buttonClicked:" destination="ReA-VB-Lug" eventType="touchUpInside" id="Tjh-EU-Kbs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUm-Sr-2jR">
+                                <rect key="frame" x="20" y="142" width="280" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Yellow" id="RX2-jq-2YM">
+                        <barButtonItem key="rightBarButtonItem" title="Gray" id="QsE-wx-jqk">
+                            <connections>
+                                <action selector="grayButtonClicked:" destination="ReA-VB-Lug" id="rcP-mZ-thH"/>
+                                <segue destination="8F1-9D-L2a" kind="show" id="AXR-U0-y8U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="myLabel" destination="tUm-Sr-2jR" id="7gM-qO-CTo"/>
                         <segue destination="yZ9-Tc-xSx" kind="show" identifier="blueway" id="55k-Vd-NHf"/>
                         <segue destination="3Z8-ry-JlO" kind="show" identifier="greenway" id="Q1h-TS-PRy"/>
                     </connections>
@@ -66,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="1074" y="389"/>
         </scene>
-        <!--Green View Controller-->
+        <!--Title-->
         <scene sceneID="2m3-tI-yKl">
             <objects>
                 <viewController id="3Z8-ry-JlO" customClass="GreenViewController" sceneMemberID="viewController">
@@ -77,15 +126,25 @@
                     <view key="view" contentMode="scaleToFill" id="rcg-GX-BwN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6z2-PQ-Cmz">
+                                <rect key="frame" x="137" y="112" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="textChange:" destination="3Z8-ry-JlO" eventType="touchUpInside" id="wgi-C6-VMp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="n5R-F0-CRH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eoj-6G-vos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1512" y="727"/>
         </scene>
-        <!--Blue View Controller-->
+        <!--Title-->
         <scene sceneID="ImZ-TJ-4wn">
             <objects>
                 <viewController id="yZ9-Tc-xSx" customClass="BlueViewController" sceneMemberID="viewController">
@@ -98,6 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="eO0-A7-lb2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oa-U9-imd" userLabel="First Responder" sceneMemberID="firstResponder"/>

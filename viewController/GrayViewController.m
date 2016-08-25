@@ -1,23 +1,18 @@
 //
-//  GreenViewController.m
+//  GrayViewController.m
 //  viewController
 //
 //  Created by user on 2016. 8. 25..
 //  Copyright © 2016년 MarsCorp. All rights reserved.
 //
 
-#import "GreenViewController.h"
+#import "GrayViewController.h"
 
-
-@interface GreenViewController ()
+@interface GrayViewController ()
 
 @end
 
-@implementation GreenViewController
-- (IBAction)textChange:(id)sender {
-    [self.pVC changeText];
-    
-}
+@implementation GrayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
